@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Todo List App</title>
+  </head>
+  <body>
+    <header class="header"></header>
+    <main>
+      <section class="secctions title">
+        <h2>TODO LIST</h2>
+        <button class="switch">
+          <img src="./assets/bxs-sun.svg" alt="" />
+        </button>
+      </section>
+      <section class="secctions search-container">
+        <form action="">
+          <input type="text" placeholder="Nueva Tarea" />
+          <button type="submit">AGREGAR</button>
+        </form>
+      </section>
+      <section class="secctions container-list" id="container_list">
+        <section class="card-container" id="container"></section>
+        <section class="buttons-footer">
+          <div class="botton-actions">
+            <button>Todos</button>
+            <button>Realizadas</button>
+            <button>Sin cumplir</button>
+          </div>
+          <div class="clear-data">
+            <button>Limpiar Realizados</button>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

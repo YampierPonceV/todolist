@@ -1,0 +1,59 @@
+@import url("./css/header.css");
+@import url("./css/main.css");
+@import url("./css/card.css");
+@import url("./css/form.css");
+
+:root {
+  --bgHeaderImage: url(../assets/bg-desktop-dark.jpg);
+  --white: #fff;
+  --fontFamily: "Poppins", sans-serif;
+  --inputColors: #25273c;
+  --colorButtons: #5b5c79;
+  --bg: #181824;
+  --bgcolorbutton: #6e3cbc;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fontFamily);
+  background: var(--bg);
+}
+
+button,
+input {
+  font-family: var(--fontFamily);
+}
+
+input {
+  background-color: var(--inputColors);
+  color: var(--white);
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+button {
+  transition: all 0.3s;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    padding: 0 1rem;
+  }
+}

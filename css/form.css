@@ -1,0 +1,33 @@
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+form input[type="text"] {
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+form input,
+form button {
+  padding: 14px 16px;
+  border-radius: 7px;
+  outline: none;
+}
+
+form button {
+  border: none;
+  background-color: var(--bgcolorbutton);
+  color: var(--white);
+  transition: opacity 0.3s;
+}
+
+form button:hover {
+  opacity: 0.8;
+}
+
+form button:active {
+  transform: scale(0.9);
+}
